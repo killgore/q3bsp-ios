@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0203369F7FFA8B706DEB5FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D22CB2EFC1BC0F7ECC5FEE /* Assets.xcassets */; };
+		0500F2352F8AC0D8ED3A93B4 /* BSPMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058BCE7A58AA3EE18E2B4F3C /* BSPMap.swift */; };
+		76EC37698FE30357210C23F2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB900BEEF6E5E3FBA0C281E4 /* GameViewController.swift */; };
+		7AAE9A3DD9B80544B9F6A2F8 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C4D4EA14889DE0E37770A6 /* Camera.swift */; };
+		9EA1A2A8E008F4B79888AB0E /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = CE28E9DF264F754615270D5E /* Shaders.metal */; };
+		AD0284D14CF7ADF2D27E070D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B455E5D3E2F30A411D660 /* AppDelegate.swift */; };
+		B230AB73D9E3EFC2BDA08D7B /* q3dm1.bsp in Resources */ = {isa = PBXBuildFile; fileRef = 9D4B0EF012492D0171B1B7F4 /* q3dm1.bsp */; };
+		B3A952C0902B073BCC11DBFB /* TouchControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DE8262A6F08CF717F8538 /* TouchControlsView.swift */; };
+		C493C2A86170ECE592CB1D85 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD4DF82C17D5CF15A2B68F /* Renderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		019B455E5D3E2F30A411D660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		058BCE7A58AA3EE18E2B4F3C /* BSPMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSPMap.swift; sourceTree = "<group>"; };
+		252DE8262A6F08CF717F8538 /* TouchControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchControlsView.swift; sourceTree = "<group>"; };
+		47D22CB2EFC1BC0F7ECC5FEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85DD4DF82C17D5CF15A2B68F /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		9D4B0EF012492D0171B1B7F4 /* q3dm1.bsp */ = {isa = PBXFileReference; path = q3dm1.bsp; sourceTree = "<group>"; };
+		A3C4D4EA14889DE0E37770A6 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		CE28E9DF264F754615270D5E /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		D210FB9345CBA9EC28A24213 /* Q3BSPViewer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Q3BSPViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB900BEEF6E5E3FBA0C281E4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		481CC22D63881A980A837C83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D210FB9345CBA9EC28A24213 /* Q3BSPViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BEF1B25CB1A7030EC33B8D2 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				058BCE7A58AA3EE18E2B4F3C /* BSPMap.swift */,
+				A3C4D4EA14889DE0E37770A6 /* Camera.swift */,
+				85DD4DF82C17D5CF15A2B68F /* Renderer.swift */,
+				CE28E9DF264F754615270D5E /* Shaders.metal */,
+			);
+			name = Renderer;
+			path = Q3BSPViewer/Renderer;
+			sourceTree = "<group>";
+		};
+		7AB84BF879437AC4C599017D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47D22CB2EFC1BC0F7ECC5FEE /* Assets.xcassets */,
+				9D4B0EF012492D0171B1B7F4 /* q3dm1.bsp */,
+			);
+			name = Resources;
+			path = Q3BSPViewer/Resources;
+			sourceTree = "<group>";
+		};
+		8A89F0C5295351226227A018 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				019B455E5D3E2F30A411D660 /* AppDelegate.swift */,
+				FB900BEEF6E5E3FBA0C281E4 /* GameViewController.swift */,
+				252DE8262A6F08CF717F8538 /* TouchControlsView.swift */,
+			);
+			name = App;
+			path = Q3BSPViewer/App;
+			sourceTree = "<group>";
+		};
+		995DE5D67AECE2159E1536BB = {
+			isa = PBXGroup;
+			children = (
+				8A89F0C5295351226227A018 /* App */,
+				4BEF1B25CB1A7030EC33B8D2 /* Renderer */,
+				7AB84BF879437AC4C599017D /* Resources */,
+				481CC22D63881A980A837C83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0258E4A24A8947E6F005F7B3 /* Q3BSPViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF893C892D0176FED83BF6D4 /* Build configuration list for PBXNativeTarget "Q3BSPViewer" */;
+			buildPhases = (
+				0AAE77BF10FFA12B84D637B1 /* Sources */,
+				92A9D106A8D001B8498CD590 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Q3BSPViewer;
+			packageProductDependencies = (
+			);
+			productName = Q3BSPViewer;
+			productReference = D210FB9345CBA9EC28A24213 /* Q3BSPViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1AF3C13403EF0E2090E7C41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0258E4A24A8947E6F005F7B3 = {
+						DevelopmentTeam = 7323V4AM57;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 447BFCA3A423EDA66E874AF4 /* Build configuration list for PBXProject "Q3BSPViewer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 995DE5D67AECE2159E1536BB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 481CC22D63881A980A837C83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0258E4A24A8947E6F005F7B3 /* Q3BSPViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92A9D106A8D001B8498CD590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0203369F7FFA8B706DEB5FFC /* Assets.xcassets in Resources */,
+				B230AB73D9E3EFC2BDA08D7B /* q3dm1.bsp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AAE77BF10FFA12B84D637B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0284D14CF7ADF2D27E070D /* AppDelegate.swift in Sources */,
+				0500F2352F8AC0D8ED3A93B4 /* BSPMap.swift in Sources */,
+				7AAE9A3DD9B80544B9F6A2F8 /* Camera.swift in Sources */,
+				76EC37698FE30357210C23F2 /* GameViewController.swift in Sources */,
+				C493C2A86170ECE592CB1D85 /* Renderer.swift in Sources */,
+				9EA1A2A8E008F4B79888AB0E /* Shaders.metal in Sources */,
+				B3A952C0902B073BCC11DBFB /* TouchControlsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3178A937717DC0F956ABBD56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7323V4AM57;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3EE09EFB60A5AF365466706C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Q3BSPViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.killgore.q3bspviewer;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92BAA0E218BE53767AB08F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7323V4AM57;
+				ENABLE_PREVIEWS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB93BDF498FC0E26DB276865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Q3BSPViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.killgore.q3bspviewer;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		447BFCA3A423EDA66E874AF4 /* Build configuration list for PBXProject "Q3BSPViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BAA0E218BE53767AB08F5E /* Debug */,
+				3178A937717DC0F956ABBD56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DF893C892D0176FED83BF6D4 /* Build configuration list for PBXNativeTarget "Q3BSPViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE09EFB60A5AF365466706C /* Debug */,
+				EB93BDF498FC0E26DB276865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1AF3C13403EF0E2090E7C41 /* Project object */;
+}
